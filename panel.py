@@ -224,16 +224,16 @@ class MainWindow(QMainWindow):
             self.ping_thread.wait()
 
         self.attack_thread = WorkerThread(attack_type, target_ip, target_port, duration, [
-            "45.127.248.127:5128:drydakfk:fvxq54xllb0b",
-            "207.244.217.165:6712:drydakfk:fvxq54xllb0b",
-            "134.73.69.7:5997:drydakfk:fvxq54xllb0b",
-            "64.64.118.149:6732:drydakfk:fvxq54xllb0b",
-            "157.52.253.244:6204:drydakfk:fvxq54xllb0b",
-            "167.160.180.203:6754:drydakfk:fvxq54xllb0b",
-            "166.88.58.10:5735:drydakfk:fvxq54xllb0b",
-            "173.0.9.70:5653:drydakfk:fvxq54xllb0b",
-            "204.44.69.89:6342:drydakfk:fvxq54xllb0b",
-            "173.0.9.209:5792:drydakfk:fvxq54xllb0b"
+            "IP:PORT:USERNAME:PASSWORD",                                                    #CHANGE THE PROXYSERVERS OR HERE GET THEM FROM WEBSHARE.IO FOR  FREE!
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
+            "IP:PORT:USERNAME:PASSWORD",
         ])
         self.attack_thread.log_signal.connect(self.log_output.append)
         self.attack_thread.start()
